@@ -4,6 +4,11 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ *
+ * @author KevinRg & Manu
+ */
+
 public class Mano implements Serializable {
 
     private List<Carta> cartas;

@@ -14,10 +14,15 @@ import java.net.Socket;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ *
+ * @author KevinRg & Manu
+ */
+
 public class Cliente {
     
-    private final int PUERTO = 1234; // Puerto para la conexi�n
-    private final String HOST; // Host para la conexi�n
+    private final int PUERTO = 1234; // Puerto para la conexion
+    private final String HOST; // Host para la conexion
     private Socket cs;
     private DataOutputStream dos;
     private DataInputStream dis;

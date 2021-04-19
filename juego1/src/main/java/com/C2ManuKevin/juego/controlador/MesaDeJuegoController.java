@@ -21,7 +21,7 @@ import javax.swing.border.LineBorder;
 
 /**
  *
- * @author JUAN-PC
+ * @author KevinRg & Manu
  */
 public class MesaDeJuegoController {
 
@@ -88,7 +88,7 @@ public class MesaDeJuegoController {
         } else {
             if (Juego.getInstance().getJugador().getMano().getCartas().size() == 1) {
                 penalizar();
-                enviarLog("no dijo UNO! y fue penalizado");
+                enviarLog("  No dijo UNO! y fue penalizado");
             }
         }
 
@@ -104,9 +104,9 @@ public class MesaDeJuegoController {
             String str = js.getNombre() + " => ("
                     + js.getMano().getCartas().size() + " cartas)";
             if (js.equals(Juego.getInstance().getPartida().getJugadorConTurno())) {
-                str += " Jugando";
+                str += "Jugando";
             } else {
-                str += " En espera";
+                str += "En espera";
             }
 
             JLabel label = new JLabel(str);
@@ -133,7 +133,7 @@ public class MesaDeJuegoController {
     private void validarPartida() {
         for (Jugador jugadore : Juego.getInstance().getPartida().getJugadores()) {
             if (jugadore.getMano().getCartas().size() == 0) {
-                JOptionPane.showMessageDialog(vista, jugadore + " Ha ganado la partida, en unos segundos iniciará otra");
+                JOptionPane.showMessageDialog(vista, jugadore + " GANASTE EL JUEGO, EN BREVE SE INICIARA OTRO JUEGO");
                 reiniciarPartida();
             }
         }

@@ -44,7 +44,7 @@
               </Group>
           </Group>
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
           </Group>
@@ -58,7 +58,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="crearButton" max="32767" attributes="0"/>
+                      <Component id="crearButton" pref="65" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace type="unrelated" max="32767" attributes="0"/>
@@ -81,7 +81,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Lucida Grande" size="18" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Nombre:"/>
+        <Property name="text" type="java.lang.String" value="Nickname:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="nameField">
@@ -104,7 +104,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Lucida Grande" size="14" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Unirse a Partida"/>
+        <Property name="text" type="java.lang.String" value="Join a Game"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="unirButtonActionPerformed"/>
@@ -118,7 +118,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Lucida Grande" size="14" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Nueva Partida"/>
+        <Property name="text" type="java.lang.String" value="New Game"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="crearButtonActionPerformed"/>
@@ -129,7 +129,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Lucida Grande" size="24" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Juguemos UNO!"/>
+        <Property name="text" type="java.lang.String" value="PLAY UNO!"/>
       </Properties>
     </Component>
   </SubComponents>

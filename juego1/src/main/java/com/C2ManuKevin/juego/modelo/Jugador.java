@@ -2,6 +2,11 @@ package com.C2ManuKevin.juego.modelo;
 
 import java.io.Serializable;
 
+/**
+ *
+ * @author KevinRg & Manu
+ */
+
 public class Jugador implements Serializable {
 
     private Mano mano;

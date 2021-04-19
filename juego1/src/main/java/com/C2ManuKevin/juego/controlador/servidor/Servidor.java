@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.C2ManuKevin.juego.controlador.servidor;
 
 import com.C2ManuKevin.juego.controlador.Juego;
@@ -15,7 +10,8 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author JUAN-PC
+ * @author KevinRG & Manuela
+ *
  */
 public class Servidor extends Thread {
 

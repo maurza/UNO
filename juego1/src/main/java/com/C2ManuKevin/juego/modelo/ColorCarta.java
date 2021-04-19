@@ -2,6 +2,11 @@ package com.C2ManuKevin.juego.modelo;
 
 import java.awt.Color;
 
+/**
+ *
+ * @author KevinRg & Manu
+ */
+
 public enum ColorCarta {
     ROJO("ROJO", Color.RED), AMARILLO("AMARILLO", Color.YELLOW), VERDE("VERDE", Color.GREEN), AZUL("AZUL", Color.BLUE);
 

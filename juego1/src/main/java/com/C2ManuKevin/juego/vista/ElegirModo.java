@@ -1,16 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.C2ManuKevin.juego.vista;
 
 import com.C2ManuKevin.juego.controlador.ElegirModoController;
 
 /**
  *
- * @author JUAN-PC
+ * @author KevinRg & Manu
  */
+
 public class ElegirModo extends javax.swing.JFrame {
 
     private final ElegirModoController controller;
@@ -45,14 +41,14 @@ public class ElegirModo extends javax.swing.JFrame {
         setBackground(new java.awt.Color(0, 0, 255));
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        jLabel1.setText("Nombre:");
+        jLabel1.setText("Nickname:");
 
         nameField.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         nameField.setPreferredSize(new java.awt.Dimension(150, 20));
 
         unirButton.setBackground(new java.awt.Color(204, 204, 255));
         unirButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        unirButton.setText("Unirse a Partida");
+        unirButton.setText("Join a Game");
         unirButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 unirButtonActionPerformed(evt);
@@ -61,7 +57,7 @@ public class ElegirModo extends javax.swing.JFrame {
 
         crearButton.setBackground(new java.awt.Color(153, 255, 153));
         crearButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        crearButton.setText("Nueva Partida");
+        crearButton.setText("New Game");
         crearButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 crearButtonActionPerformed(evt);
@@ -69,7 +65,7 @@ public class ElegirModo extends javax.swing.JFrame {
         });
 
         jLabel2.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
-        jLabel2.setText("Juguemos UNO!");
+        jLabel2.setText("PLAY UNO!");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -89,7 +85,7 @@ public class ElegirModo extends javax.swing.JFrame {
                         .addComponent(nameField, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(37, 37, 37))))
             .addGroup(layout.createSequentialGroup()
-                .addGap(57, 57, 57)
+                .addGap(79, 79, 79)
                 .addComponent(jLabel2)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
@@ -101,7 +97,7 @@ public class ElegirModo extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(42, 42, 42)
-                        .addComponent(crearButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(crearButton, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)

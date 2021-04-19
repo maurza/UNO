@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  *
- * @author JUAN-PC
+ * @author KevinRg & Manu
  */
 public class Juego {
 

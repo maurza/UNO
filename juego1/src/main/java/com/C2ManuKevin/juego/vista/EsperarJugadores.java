@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.C2ManuKevin.juego.vista;
 
 import com.C2ManuKevin.juego.controlador.EsperarJugadoresController;
@@ -12,8 +7,9 @@ import javax.swing.JLabel;
 
 /**
  *
- * @author JUAN-PC
+ * @author KevinRg & Manu
  */
+
 public class EsperarJugadores extends javax.swing.JFrame {
     
     private final EsperarJugadoresController controller;
@@ -55,8 +51,13 @@ public class EsperarJugadores extends javax.swing.JFrame {
 
         ipLabel.setEditable(false);
         ipLabel.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        ipLabel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ipLabelActionPerformed(evt);
+            }
+        });
 
-        startButton.setText("Empezar Partida");
+        startButton.setText("Start Game");
         startButton.setEnabled(false);
         startButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -65,7 +66,7 @@ public class EsperarJugadores extends javax.swing.JFrame {
         });
 
         copiarButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        copiarButton.setText("Copiar");
+        copiarButton.setText("Copy");
         copiarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 copiarButtonActionPerformed(evt);
@@ -88,13 +89,10 @@ public class EsperarJugadores extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(ipLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(75, 75, 75)
-                                .addComponent(copiarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(53, 53, 53)
-                                .addComponent(startButton)))
+                        .addGap(53, 53, 53)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(startButton)
+                            .addComponent(copiarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(23, 23, 23))
         );
@@ -102,18 +100,19 @@ public class EsperarJugadores extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(copiarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(ipLabel))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(copiarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(startButton, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(ipLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(63, 63, 63))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(64, 64, 64)
+                        .addComponent(startButton, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(41, 41, 41))
         );
 
         pack();
@@ -125,8 +124,12 @@ public class EsperarJugadores extends javax.swing.JFrame {
 
     private void copiarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_copiarButtonActionPerformed
         controller.copiarAlPortapapeles(ipLabel.getText());
-        ipLabel.setText("Copiado");
+        ipLabel.setText("Copied");
     }//GEN-LAST:event_copiarButtonActionPerformed
+
+    private void ipLabelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ipLabelActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ipLabelActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -144,18 +147,14 @@ public class EsperarJugadores extends javax.swing.JFrame {
         jPanel1.removeAll();
         for (int i = 0; i < controller.getCantidadJugadores(); i++) {
             int j = i + 1;    
-            JLabel label1 = new JLabel("Jugador " + j + ": " );
+            JLabel label1 = new JLabel("   - Player " + j + " : " );
             jPanel1.add(label1);
             JLabel label2 = new JLabel(controller.getJugador(i).getNombre());
             jPanel1.add(label2);
             jlabels.add(label2);
             jPanel1.updateUI();
         }
-        /*int i = 0;
-        while (controller.getCantidadJugadores() > i) {
-            jlabels.get(i).setText(controller.getJugador(i).getNombre());
-            i++;
-        }*/
+        
         if (controller.getCantidadJugadores() >= 2) {
             startButton.setEnabled(true);
         }

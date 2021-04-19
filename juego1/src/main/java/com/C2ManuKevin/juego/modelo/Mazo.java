@@ -6,6 +6,12 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
+/**
+ *
+ * @author KevinRg & Manu
+ */
+
+
 public class Mazo implements Serializable {
 
     private List<Carta> cartas;

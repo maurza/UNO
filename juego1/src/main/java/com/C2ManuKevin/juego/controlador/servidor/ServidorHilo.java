@@ -15,6 +15,11 @@ import java.net.Socket;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ *
+ * @author KevinRg & Manu
+ */
+
 public class ServidorHilo extends Thread {
 
     private Socket socket;

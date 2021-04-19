@@ -8,6 +8,11 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
+/**
+ *
+ * @author KevinRg & Manu
+ */
+
 public class Partida implements Serializable {
 
     private final int CARTAS_INICIALES = 7;
