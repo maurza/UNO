@@ -54,7 +54,6 @@ public class ServidorHilo extends Thread {
                 accion = dis.readUTF();
                 accionar(accion);
             } while (!accion.equals("end!"));
-            System.out.println("Finalizado");
         } catch (IOException ex) {
             Logger.getLogger(ServidorHilo.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -90,7 +89,6 @@ public class ServidorHilo extends Thread {
             try {
                 String string = dis.readUTF();
                 Partida partida = mapper.readValue(string, Partida.class);
-                System.out.println("Se recibe la partida " + partida.hashCode() + " del cliente");
                 Juego.getInstance().setPartida(partida);
                 Juego.getInstance().mesaDeJuegoController.reloadUI();
                 enviarPartidaClientes();
@@ -120,7 +118,6 @@ public class ServidorHilo extends Thread {
                 enviarMensajeAlCliente(ComandosController.RECIBIR_PARTIDA, soc);
                 String sr = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(Juego.getInstance().getPartida());
                 enviarMensajeAlCliente(sr, soc);
-                System.out.println("Se envió a los clientes la partida " + Juego.getInstance().getPartida().hashCode());
             }
 
         } catch (JsonProcessingException ex) {

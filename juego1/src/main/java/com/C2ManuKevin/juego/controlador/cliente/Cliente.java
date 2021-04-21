@@ -48,7 +48,6 @@ public class Cliente {
     
     public void enviarMensajeAlServidor(String s) {
         try {
-//            System.out.println("Se envía al servidor: " + s);
             dos = new DataOutputStream(cs.getOutputStream());
             dos.writeUTF(s);
             dos.flush();
@@ -75,7 +74,6 @@ public class Cliente {
 //                System.out.println("Se recibe del servidor: " + accion);
                 accionar(accion);
             } while (!accion.equals("end!"));
-            System.out.println("Finalizado");
         } catch (IOException ex) {
             Logger.getLogger(ServidorHilo.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -88,7 +86,6 @@ public class Cliente {
             try {
                 String string = dis.readUTF();
                 Partida partida = mapper.readValue(string, Partida.class);
-                System.out.println("Se recibe del servidor la partida " + partida.hashCode());
                 Juego.getInstance().setPartida(partida);
                 if (Juego.getInstance().mesaDeJuegoController != null) {
                     Juego.getInstance().mesaDeJuegoController.reloadUI();
@@ -119,7 +116,6 @@ public class Cliente {
             enviarMensajeAlServidor(ComandosController.ENVIAR_PARTIDA);
             String sr = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(Juego.getInstance().getPartida());
             enviarMensajeAlServidor(sr);
-            System.out.println("Se envia la partida al servidor");
         } catch (JsonProcessingException ex) {
             Logger.getLogger(ServidorHilo.class.getName()).log(Level.SEVERE, null, ex);
         }

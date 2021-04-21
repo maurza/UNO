@@ -1,19 +1,19 @@
-D:\Desktop\juego1\src\main\java\com\sebastianes\juego\modelo\Jugador.java
-D:\Desktop\juego1\src\main\java\com\sebastianes\juego\controlador\ComandosController.java
-D:\Desktop\juego1\src\main\java\com\sebastianes\juego\controlador\EsperarJugadoresController.java
-D:\Desktop\juego1\src\main\java\com\sebastianes\juego\controlador\Juego.java
-D:\Desktop\juego1\src\main\java\com\sebastianes\juego\controlador\servidor\Servidor.java
-D:\Desktop\juego1\src\main\java\com\sebastianes\juego\vista\EsperarJugadores.java
-D:\Desktop\juego1\src\main\java\com\sebastianes\juego\modelo\CaraCarta.java
-D:\Desktop\juego1\src\main\java\com\sebastianes\juego\modelo\Partida.java
-D:\Desktop\juego1\src\main\java\com\sebastianes\juego\vista\ElegirModo.java
-D:\Desktop\juego1\src\main\java\com\sebastianes\juego\controlador\servidor\ServidorHilo.java
-D:\Desktop\juego1\src\main\java\com\sebastianes\juego\modelo\Carta.java
-D:\Desktop\juego1\src\main\java\com\sebastianes\juego\vista\MesaDeJuego.java
-D:\Desktop\juego1\src\main\java\com\sebastianes\juego\modelo\Mazo.java
-D:\Desktop\juego1\src\main\java\com\sebastianes\juego\modelo\Mano.java
-D:\Desktop\juego1\src\main\java\com\sebastianes\juego\controlador\App.java
-D:\Desktop\juego1\src\main\java\com\sebastianes\juego\controlador\MesaDeJuegoController.java
-D:\Desktop\juego1\src\main\java\com\sebastianes\juego\modelo\ColorCarta.java
-D:\Desktop\juego1\src\main\java\com\sebastianes\juego\controlador\ElegirModoController.java
-D:\Desktop\juego1\src\main\java\com\sebastianes\juego\controlador\cliente\Cliente.java
+C:\Users\kevin\Desktop\2021-1\Comunicaciones\Evaluacion modulo 1\UNO\UNO\juego1\src\main\java\com\C2ManuKevin\juego\controlador\App.java
+C:\Users\kevin\Desktop\2021-1\Comunicaciones\Evaluacion modulo 1\UNO\UNO\juego1\src\main\java\com\C2ManuKevin\juego\controlador\ComandosController.java
+C:\Users\kevin\Desktop\2021-1\Comunicaciones\Evaluacion modulo 1\UNO\UNO\juego1\src\main\java\com\C2ManuKevin\juego\controlador\MesaDeJuegoController.java
+C:\Users\kevin\Desktop\2021-1\Comunicaciones\Evaluacion modulo 1\UNO\UNO\juego1\src\main\java\com\C2ManuKevin\juego\controlador\Juego.java
+C:\Users\kevin\Desktop\2021-1\Comunicaciones\Evaluacion modulo 1\UNO\UNO\juego1\src\main\java\com\C2ManuKevin\juego\controlador\ElegirModoController.java
+C:\Users\kevin\Desktop\2021-1\Comunicaciones\Evaluacion modulo 1\UNO\UNO\juego1\src\main\java\com\C2ManuKevin\juego\controlador\servidor\Servidor.java
+C:\Users\kevin\Desktop\2021-1\Comunicaciones\Evaluacion modulo 1\UNO\UNO\juego1\src\main\java\com\C2ManuKevin\juego\controlador\servidor\ServidorHilo.java
+C:\Users\kevin\Desktop\2021-1\Comunicaciones\Evaluacion modulo 1\UNO\UNO\juego1\src\main\java\com\C2ManuKevin\juego\modelo\Partida.java
+C:\Users\kevin\Desktop\2021-1\Comunicaciones\Evaluacion modulo 1\UNO\UNO\juego1\src\main\java\com\C2ManuKevin\juego\modelo\ColorCarta.java
+C:\Users\kevin\Desktop\2021-1\Comunicaciones\Evaluacion modulo 1\UNO\UNO\juego1\src\main\java\com\C2ManuKevin\juego\modelo\Carta.java
+C:\Users\kevin\Desktop\2021-1\Comunicaciones\Evaluacion modulo 1\UNO\UNO\juego1\src\main\java\com\C2ManuKevin\juego\vista\ElegirModo.java
+C:\Users\kevin\Desktop\2021-1\Comunicaciones\Evaluacion modulo 1\UNO\UNO\juego1\src\main\java\com\C2ManuKevin\juego\modelo\CaraCarta.java
+C:\Users\kevin\Desktop\2021-1\Comunicaciones\Evaluacion modulo 1\UNO\UNO\juego1\src\main\java\com\C2ManuKevin\juego\modelo\Mazo.java
+C:\Users\kevin\Desktop\2021-1\Comunicaciones\Evaluacion modulo 1\UNO\UNO\juego1\src\main\java\com\C2ManuKevin\juego\vista\MesaDeJuego.java
+C:\Users\kevin\Desktop\2021-1\Comunicaciones\Evaluacion modulo 1\UNO\UNO\juego1\src\main\java\com\C2ManuKevin\juego\controlador\EsperarJugadoresController.java
+C:\Users\kevin\Desktop\2021-1\Comunicaciones\Evaluacion modulo 1\UNO\UNO\juego1\src\main\java\com\C2ManuKevin\juego\controlador\cliente\Cliente.java
+C:\Users\kevin\Desktop\2021-1\Comunicaciones\Evaluacion modulo 1\UNO\UNO\juego1\src\main\java\com\C2ManuKevin\juego\modelo\Mano.java
+C:\Users\kevin\Desktop\2021-1\Comunicaciones\Evaluacion modulo 1\UNO\UNO\juego1\src\main\java\com\C2ManuKevin\juego\modelo\Jugador.java
+C:\Users\kevin\Desktop\2021-1\Comunicaciones\Evaluacion modulo 1\UNO\UNO\juego1\src\main\java\com\C2ManuKevin\juego\vista\EsperarJugadores.java
